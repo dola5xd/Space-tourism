@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"/>
+
+        <title>Frontend Mentor | Space tourism website</title>
+        <link rel="stylesheet" href="./assets/css/output.css"/>
+    </head>
+    <body class="overflow-hidden min-h-[100vh] bg-darkBlue-0 overflow-x-hidden bg-mobileTech desktop:bg-desktopTech tablet:bg-tabletTech bg-cover bg-no-repeat bg-bottom">
+        <header class="relative min-w-full">
+            <nav class="relative flex items-center justify-between py-5 px-7">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/shared/logo.svg" alt="logo"/></a>
+                </div>
+                <div class="mobileNav tablet:hidden">
+                    <div class="cursor-pointer humberger" id="hum">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                            <g fill="#D0D6F9" fill-rule="evenodd" class="transition-all duration-500 hover:opacity-50">
+                                <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="menu" class="min-h-[100vh] z-50 absolute top-0 right-0 w-[75%] bg-bgMenu-0 backdrop-blur-2xl hidden flex-col gap-6 transition-all duration-500 translate-x-full">
+                        <div class="flex flex-row-reverse py-5 mt-4 cursor-pointer close px-7" id="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+                                <g fill="#D0D6F9" fill-rule="evenodd" class="transition-all duration-500 hover:opacity-50">
+                                    <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+                                    <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <ul class="links">
+                            <li class="relative px-5 py-2 my-7">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./index.html">
+                                    <span class="mr-4 font-bold">00</span>
+                                    HOME</a>
+                            </li>
+                            <li class="relative px-5 py-2 my-7">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./destination.html">
+                                    <span class="mr-4 font-bold">01</span>
+                                    DESTINATION</a>
+                            </li>
+                            <li class="relative px-5 py-2  my-7">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./crew.html">
+                                    <span class="mr-4 font-bold">02</span>
+                                    CREW</a>
+                            </li>
+                            <li class="relative px-5 py-2 my-7 active">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./technology.html">
+                                    <span class="mr-4 font-bold">03</span>
+                                    TECHNOLOGY</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden desktopNav tablet:block">
+                    <ul class="flex items-center justify-between gap-6 links desktop:bg-bgMenu-0 desktop:backdrop-blur-2xl desktop:py-7 desktop:px-10">
+                        <li class="relative">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./index.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">00</span>HOME</a>
+                        </li>
+                        <li class="relative">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./destination.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">01</span>DESTINATION</a>
+                        </li>
+                        <li class="relative ">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./crew.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">02</span>CREW</a>
+                        </li>
+                        <li class="relative active">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./technology.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">03</span>TECHNOLOGY</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <h3 class="font-Barlow text-white text-[16px] tracking-[2.7px] uppercase text-center tablet:text-start my-[10px] tablet:ml-[20px] desktop:ml-10">
+                <span class="font-bold opacity-25 mr-[10px]">01</span>SPACE LAUNCH 101
+            </h3>
+            <div class="flex items-center justify-center gap-10 flex-col desktop:flex-row-reverse desktop:py-20 desktop:min-w-1/2">
+                <div class="tablet:my-7">
+                    <img src="./assets/technology/image-launch-vehicle-portrait.jpg" id="image" class="transition-all duration-700 ">
+                </div>
+                <div class="flex items-center justify-center flex-col desktop:flex-row desktop:min-w-1/2">
+                    <div class="circles font-Barlow my-5 desktop:ml-10">
+                        <span class="active ">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center px-[50px] tablet:px-[90px] desktop:text-start desktop:items-start desktop:w-[775px]">
+                        <span class="text-softBlue-0 font-Barlow text-[14px] tracking-[2.362px] tablet:text-[16px] tablet:tracking-[2.7px]">THE TERMINOLOGY…</span>
+                        <h1 id="vehicle" class="text-white font-Bellefair text-[24px] uppercase my-3 transition-all duration-700 tablet:text-[40px] desktop:text-[56px]">
+                            LAUNCH VEHICLE
+                        </h1>
+                        <p id="descrip" class="text-softBlue-0 font-Barlow text-[15px] leading-[25px] transition-all duration-700 tablet:text-[16px] tablet:leading-[28px] desktop:text-[18px] desktop:leading-[32px] desktop:w-[444px]">
+                            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="module" src="./assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: #d0d6f9;
+  color: #0b0d17;
+}
+.links li a {
+  display: block;
+  width: 106%;
+}
+.links li a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: transparent;
+  border-radius: 12px 0px 0px 12px;
+  transition: all 0.5s;
+}
+
+.links li:hover a::after {
+  background-color: white;
+  opacity: 0.5;
+}
+.links .active a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: white;
+  border-radius: 12px 0px 0px 12px;
+  transition: all 0.5s;
+}
+.links .active:hover a::after {
+  opacity: 0.5;
+}
+
+.content {
+  min-height: calc(100vh - 88px);
+}
+.shadowc {
+  box-shadow: 0px 0 0 50px transparent;
+}
+.shadowc:hover {
+  box-shadow: 0px 0 0 50px rgb(255 255 255 / 10%);
+}
+@media (min-width: 525px) {
+  .links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 200%;
+    height: 4px;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.5s;
+  }
+
+  .links li:hover a::after {
+    background-color: white;
+    opacity: 0.5;
+  }
+  .links .active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 200%;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  .links .active:hover a::after {
+    opacity: 0.5;
+  }
+  .content {
+    min-height: auto;
+  }
+}
+.dest {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.dest li {
+  color: #d0d6f9;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.362px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 5px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.dest li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.dest li.active {
+  color: #fff;
+}
+.dest li.active::after {
+  background-color: #fff;
+}
+.dest li:hover::after {
+  background-color: #fff;
+}
+.dest li.active:hover::after {
+  background-color: #d0d6f9;
+}
+@media (min-width: 1115px) {
+  .dest li {
+    font-size: 18px;
+  }
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.dots span {
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.dots span.active {
+  opacity: 0.174363;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.circles span {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 100%;
+  border: 2px solid #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 15px;
+}
+.circles span.active {
+  color: #0b0d17;
+  border-color: #fff;
+  background-color: #fff;
+}
+@media (min-width: 525px) {
+  .circles span {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1115px) {
+  .circles {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .circles span {
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+  }
+}

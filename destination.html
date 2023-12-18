@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"/>
+
+        <title>Frontend Mentor | Space tourism website</title>
+        <link rel="stylesheet" href="./assets/css/output.css"/>
+    </head>
+    <body class="min-h-[100vh] bg-darkBlue-0 overflow-x-hidden bg-mobiledestination desktop:bg-desktopdestination tablet:bg-tabletdestination bg-cover bg-no-repeat bg-bottom">
+        <header class="relative min-w-full">
+            <nav class="relative flex items-center justify-between py-5 px-7">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./assets/shared/logo.svg" alt="logo"/></a>
+                </div>
+                <div class="mobileNav tablet:hidden">
+                    <div class="cursor-pointer humberger" id="hum">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                            <g fill="#D0D6F9" fill-rule="evenodd" class="transition-all duration-500 hover:opacity-50">
+                                <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div id="menu" class="min-h-[100vh] z-50 absolute top-0 right-0 w-[75%] bg-bgMenu-0 backdrop-blur-2xl hidden flex-col gap-6 transition-all duration-500 translate-x-full">
+                        <div class="flex flex-row-reverse py-5 mt-4 cursor-pointer close px-7" id="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+                                <g fill="#D0D6F9" fill-rule="evenodd" class="transition-all duration-500 hover:opacity-50">
+                                    <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+                                    <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <ul class="links">
+                            <li class="relative px-5 py-2 my-7">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./index.html">
+                                    <span class="mr-4 font-bold">00</span>
+                                    HOME</a>
+                            </li>
+                            <li class="relative px-5 py-2 active my-7">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./destination.html">
+                                    <span class="mr-4 font-bold">01</span>
+                                    DESTINATION</a>
+                            </li>
+                            <li class="relative px-5 py-2 my-7">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./crew.html">
+                                    <span class="mr-4 font-bold">02</span>
+                                    CREW</a>
+                            </li>
+                            <li class="relative px-5 py-2 my-7">
+                                <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[16px] relative " href="./technology.html">
+                                    <span class="mr-4 font-bold">03</span>
+                                    TECHNOLOGY</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden desktopNav tablet:block">
+                    <ul class="flex items-center justify-between gap-6 links desktop:bg-bgMenu-0 desktop:backdrop-blur-2xl desktop:py-7 desktop:px-10">
+                        <li class="relative">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./index.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">00</span>HOME</a>
+                        </li>
+                        <li class="relative active">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./destination.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">01</span>DESTINATION</a>
+                        </li>
+                        <li class="relative">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./crew.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">02</span>CREW</a>
+                        </li>
+                        <li class="relative">
+                            <a class="text-White-0 font-Barlow tracking-[2.5px] font-medium text-[15px]" href="./technology.html">
+                                <span class="mr-2 font-bold text-white text-[16px] tracking-[2.7px] font-Barlow tablet:hidden desktop:inline-block">03</span>TECHNOLOGY</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="px-7">
+            <h3 class="font-Barlow text-white text-[16px] tracking-[2.7px] uppercase text-center tablet:text-start my-[10px]">
+                <span class="font-bold opacity-25 mr-[10px]">01</span>Pick your
+                                                                                                                                                    destination
+            </h3>
+            <div class="flex justify-between items-center flex-col gap-[10px] tablet:pt-[10px] desktop:flex-row desktop:py-[100px]">
+                <div class="transition-all duration-700 scale-80 desktop:scale-100 desktop:w-1/2 desktop:px-16">
+                    <img src="./assets/destination/image-moon.png" id="planetImage" class="transition-all duration-700"/>
+                </div>
+                <div class="Info flex flex-col items-center justify-center gap-[10px] tablet:px-16 desktop:items-start desktop:w-1/2">
+                    <ul class="dest font-Barlow">
+                        <li class="active desktop:text-[16px]">MOON</li>
+                        <li>MARS</li>
+                        <li>EUROPA</li>
+                        <li>TITAN</li>
+                    </ul>
+                    <h1 id="name" class="text-white font-Bellefair text-[56px] uppercase desktop:text-[100px] transition-all duration-700">
+                        Moon
+                    </h1>
+                    <p id="description" class="text-softBlue-0 font-Barlow text-[15px] text-center leading-[25px] tablet:text-[16px] tablet:leading-[28px] tablet:mb-7 desktop:text-start desktop:text-[18px] desktop:leading-[32px] transition-all duration-700">
+                        See our planet as you’ve never seen it before. A perfect relaxing
+                                                                                                                                                                                    trip away to help regain perspective and come back refreshed. While
+                                                                                                                                                                                    you’re there, take in some history by visiting the Luna 2 and Apollo
+                                                                                                                                                                                    11 landing sites.
+                    </p>
+                    <hr class="border-[#383B4B] h-[2px] w-full"/>
+                    <div class="text-center text-softBlue-0 font-Barlow text-[14px] tracking-[2.362px] uppercase tablet:flex tablet:justify-between tablet:gap-[95px]">
+                        <h3>
+                            AVG. DISTANCE<span class="block text-white text-[28px] uppercase font-Bellefair transition-all duration-700" id="distance">384,400 km</span>
+                        </h3>
+                        <h3>
+                            Est. travel time<span class="block text-white text-[28px] uppercase font-Bellefair transition-all duration-700" id="travel">3 days</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="module" src="./assets/js/main.js"></script>
+    </body>
+</html>
